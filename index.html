@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/2af363a9d9.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script defer type="module" src="/main.js"></script>
+
+  <title>Skolica</title>
+</head>
+
+<body class="bg-darkish text-whiteish">
+
+  <!-- Navigation -->
+
+  <nav id="navigation" class="border-b-2 border-solid border-whiteish fixed w-full z-20 t-4">
+    <div class="container mx-auto">
+      <div class="navigation flex justify-between items-center mt-2 relative">
+
+        <div class="logo">
+          <a href="#home">
+            <img src="./img/logo.png" alt="logo" class="h-16 w-16 md:h-20 md:w-20 xl:h-24 xl:w-24">
+          </a>
+        </div>
+
+        <div class="hamburger cursor-pointer  md:hidden">
+          <i class="fas fa-duotone fa-bars text-2xl"></i>
+        </div>
+
+        <div class="nav-menu-small absolute top-16 flex flex-col text-center text-lg w-full md:hidden">
+          <ul class="nav-list hidden">
+            <li class="p-1 bg-whiteish text-darkish border-b-2 border-solid border-darkish"><a href="#"
+                class="list-menu">O
+                nama</a>
+            </li>
+            <li class="p-1 bg-whiteish text-darkish border-b-2 border-solid border-darkish"><a href="#"
+                class="list-menu">Usluge</a>
+            </li>
+            <li class="p-1 bg-whiteish text-darkish border-b-2 border-solid border-darkish"><a href="#"
+                class="list-menu">Kontakt</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hidden md:block">
+          <a href="#"
+            class="p-1 text-lg lg:text-xl xl:text-2xl hover:border-dotted hover:border-b-2 hover:border-whiteish">O
+            nama</a>
+          <a href="#"
+            class="p-1 text-lg lg:text-xl xl:text-2xl hover:border-dotted hover:border-b-2 hover:border-whiteish">Usluge</a>
+          <a href="#"
+            class="p-1 text-lg lg:text-xl xl:text-2xl hover:border-dotted hover:border-b-2 hover:border-whiteish">Kontakt</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home Page -->
+
+  <section id="home" class="relative background border-b-2 border-solid border-whiteish">
+    <div class="container mx-auto overflow-hidden">
+      <div class="home-content my-28 xl:mt-48 flex flex-col items-center text-center relative z-10">
+        <div class="home-img">
+          <img src="./img/edited_gifts-removebg-preview.png" alt="birthadImage" class="">
+        </div>
+
+        <div class="home-message mt-8">
+          <p class="animation text-3xl lg:text-4xl xl:text-5xl">"Rođendan je prava stvar: cika, vriska i dar-mar!"</p>
+          <p class="text-3xl lg:text-4xl xl:text-5xl mt-8">Školica sporta Soko</p>
+        </div>
+
+        <button
+          class="btn-home border-solid border-whiteish border-2 rounded hover:bg-whiteish hover:text-darkish px-4 py-2 mt-8 text-2xl lg:text-3xl xl:text-4xl">Zakaži
+          rođendan</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Count section -->
+
+  <section id="count" class="background border-b-2 border-solid border-whiteish">
+    <div class="container mx-auto overflow-hidden">
+      <div class="counting z-10 relative my-8 flex flex-col justify-between item-center lg:flex-row lg:justify-between">
+        <div class="flex flex-col text-center m-4">
+          <i class="fas fa-smile fa-2x text-whiteish lg:text-4xl"></i>
+          <p class="text-xl mt-2 lg:text-3xl">Sa Vama se družimo preko <span class="years animation">1</span> godina</p>
+        </div>
+        <div class="flex flex-col text-center m-4">
+          <i class="fas fa-gift fa-2x lg:text-4xl"></i>
+          <p class="text-xl mt-2 lg:text-3xl">Odradili smo preko <span class="activity animation">1</span>
+            rodjendana,<br>
+            animacija,
+            sportskih
+            aktivnosti...
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>

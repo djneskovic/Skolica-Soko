@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Pacifico', cursive;
+}
+
+.background {
+    background-image: url('/img/dots-blue-dots-background-wallpaper-preview-removebg-preview.png');
+    position: relative;
+
+    &::before {
+        position: absolute;
+        inset: 0;
+        content: '';
+        background-color: rgba($color: #000000, $alpha: .5);
+    }
+}
+
+.animation {
+    animation: changeColor 2s infinite;
+
+    @keyframes changeColor {
+        0% {
+            color: #FFEDDF;
+        }
+
+        25% {
+            color: #f9cf37;
+        }
+
+        50% {
+            color: #d33405;
+        }
+
+        75% {
+            color: #0257a2;
+        }
+    }
+}
