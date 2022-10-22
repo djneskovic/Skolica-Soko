@@ -12,6 +12,17 @@ body {
     font-family: 'Pacifico', cursive;
 }
 
+#navigation {
+    background-color: #0d1321;
+
+    &::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background-color: rgba($color: #000000, $alpha: .3);
+    }
+}
+
 .background {
     background-image: url('/img/dots-blue-dots-background-wallpaper-preview-removebg-preview.png');
     position: relative;
@@ -44,4 +55,8 @@ body {
             color: #0257a2;
         }
     }
+}
+
+.border-bottom {
+    border-bottom: 2px solid #ffeddf;
 }

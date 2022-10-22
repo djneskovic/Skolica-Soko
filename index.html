@@ -3,22 +3,22 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="icon" type="image/x-icon" href="./img/favicon-32x32.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://kit.fontawesome.com/2af363a9d9.js" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <script defer type="module" src="/main.js"></script>
 
-  <title>Skolica</title>
+  <title>Školica sporta Soko</title>
 </head>
 
 <body class="bg-darkish text-whiteish">
 
   <!-- Navigation -->
 
-  <nav id="navigation" class="border-b-2 border-solid border-whiteish fixed w-full z-20 t-4">
+  <nav id="navigation" class="border-bottom fixed w-full z-20 t-4">
     <div class="container mx-auto">
-      <div class="navigation flex justify-between items-center mt-2 relative">
+      <div class="navigation flex justify-between items-center mt-2 relative z-10">
 
         <div class="logo">
           <a href="#home">
@@ -32,7 +32,7 @@
 
         <div class="nav-menu-small absolute top-16 flex flex-col text-center text-lg w-full md:hidden">
           <ul class="nav-list hidden">
-            <li class="p-1 bg-whiteish text-darkish border-b-2 border-solid border-darkish"><a href="#"
+            <li class="p-1 bg-whiteish text-darkish border-b-2 border-solid border-darkish"><a href="#about"
                 class="list-menu">O
                 nama</a>
             </li>
@@ -46,7 +46,7 @@
         </div>
 
         <div class="hidden md:block">
-          <a href="#"
+          <a href="#about"
             class="p-1 text-lg lg:text-xl xl:text-2xl hover:border-dotted hover:border-b-2 hover:border-whiteish">O
             nama</a>
           <a href="#"
@@ -60,7 +60,7 @@
 
   <!-- Home Page -->
 
-  <section id="home" class="relative background border-b-2 border-solid border-whiteish">
+  <section id="home" class="relative background border-bottom">
     <div class="container mx-auto overflow-hidden">
       <div class="home-content my-28 xl:mt-48 flex flex-col items-center text-center relative z-10">
         <div class="home-img">
@@ -82,7 +82,7 @@
 
   <!-- Count section -->
 
-  <section id="count" class="background border-b-2 border-solid border-whiteish">
+  <section id="count" class="background border-bottom">
     <div class="container mx-auto overflow-hidden">
       <div class="counting z-10 relative my-8 flex flex-col justify-between item-center lg:flex-row lg:justify-between">
         <div class="flex flex-col text-center m-4">
@@ -101,6 +101,51 @@
       </div>
     </div>
   </section>
+
+  <!-- About -->
+
+  <section id="about" class="background border-bottom">
+    <div class="container mx-auto overflow-hidden">
+      <div class="about my-8 relative z-10">
+        <div class="about-content flex flex-col text-center">
+          <h2 class="text-3xl lg:text-4xl mb-4 animation">Ko smo mi?</h2>
+          <p class="text-lg md:text-xl lg:text-2xl xl:text-3xl">Dragi roditelji, <br class="xl:leading-loose"> Mi smo
+            animatori za decu. Naš
+            zadatak je da
+            Vašu decu
+            učinimo srećnim
+            i da im bude
+            zabavno! </p>
+        </div>
+
+        <h2 class="text-center mt-12 mb-8 text-2xl md:text-3xl animation">Naš tim</h2>
+
+        <div class="team flex flex-col xl:flex-row xl:justify-evenly justify-between items-center text-center">
+
+          <div class="milos flex flex-col items-center text-center my-4">
+            <img src="./img/profil.png" alt="profilna-milos" class="h-28 w-28 rounded-full mb-4">
+            <div class="milos-content">
+              <h3 class="text-2xl xl:text-3xl animation my-2">Miloš</h3>
+              <p class="text-base md:text-lg xl:text-xl">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Quasi, eius!
+              </p>
+            </div>
+          </div>
+
+          <div class="milos flex flex-col items-center text-center my-4">
+            <img src="./img/profil.png" alt="profilna-milos" class="h-28 w-28 rounded-full mb-4">
+            <div class="milos-content">
+              <h3 class="text-2xl xl:text-3xl animation my-2">Miloš</h3>
+              <p class="text-base md:text-lg xl:text-xl">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Quasi, eius!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
 </body>
 
 </html>
