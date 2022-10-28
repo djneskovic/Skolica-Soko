@@ -80,7 +80,7 @@ $(document).ready(function () {
         {
             id: 4,
             name: 'Mirko',
-            text: '"Do sada,ovo je bio najbolji rođendan, animatori su za svaku pohvalu!"'
+            text: '"Do sada,ovo je bio najbolji rođendan, animatori su za svaku pohvalu! 10/10"'
         }
     ];
 
@@ -97,7 +97,14 @@ $(document).ready(function () {
         message.textContent = item.text;
     }
 
-    showPerson(currentItem);
+    // showPerson(currentItem);
+    setInterval(function () {
+        currentItem++;
+        if (currentItem > reviews.length - 1) {
+            currentItem = 0;
+        }
+        showPerson(currentItem)
+    }, 5000)
 
     btnRight.addEventListener('click', () => {
         currentItem++;
@@ -112,5 +119,16 @@ $(document).ready(function () {
             currentItem = reviews.length - 1;
         }
         showPerson(currentItem);
+    })
+
+    //! Gallery
+
+    const $galleryImgs = $('.gallery-img');
+    const $overlay = $('.overlay');
+    $galleryImgs.each(function () {
+        $(this).click(function () {
+            $(this).toggleClass('gallery-img-fixed');
+            $overlay.toggleClass('hidden')
+        })
     })
 })
