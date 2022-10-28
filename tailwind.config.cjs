@@ -23,7 +23,9 @@ module.exports = {
         whiteish: '#FFEDDF',
         yellowish: '#F5E960',
         grey: '#f4f4f4',
-        darkish: '#0D1321'
+        darkish: '#0D1321',
+        blueish: '#0257a2',
+        orangeish: '#d33405'
       },
     },
   },

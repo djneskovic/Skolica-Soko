@@ -64,3 +64,18 @@ body {
 .border-top {
     border-top: 2px solid #ffeddf;
 }
+
+.btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 1rem;
+    cursor: pointer;
+
+    .btn {
+        padding: 0 .4rem;
+    }
+
+}
