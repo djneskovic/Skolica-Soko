@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <link rel="icon" type="image/x-icon" href="./img/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://kit.fontawesome.com/2af363a9d9.js" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
@@ -39,7 +40,7 @@
             <li class="p-1 bg-whiteish text-darkish border-b-2 border-solid border-darkish"><a href="#services"
                 class="list-menu">Usluge</a>
             </li>
-            <li class="p-1 bg-whiteish text-darkish border-b-2 border-solid border-darkish"><a href="#"
+            <li class="p-1 bg-whiteish text-darkish border-b-2 border-solid border-darkish"><a href="#contact"
                 class="list-menu">Kontakt</a>
             </li>
           </ul>
@@ -51,7 +52,7 @@
             nama</a>
           <a href="#services"
             class="p-1 text-lg lg:text-xl xl:text-2xl hover:border-dotted hover:border-b-2 hover:border-whiteish">Usluge</a>
-          <a href="#"
+          <a href="#contact"
             class="p-1 text-lg lg:text-xl xl:text-2xl hover:border-dotted hover:border-b-2 hover:border-whiteish">Kontakt</a>
         </div>
       </div>
@@ -68,13 +69,14 @@
         </div>
 
         <div class="home-message mt-8">
-          <p class="animation text-3xl lg:text-4xl xl:text-5xl">"Rođendan je prava stvar: cika, vriska i dar-mar!"</p>
+          <p class="animation text-3xl lg:text-4xl xl:text-5xl">"Rođendan je prava
+            stvar: cika, vriska i dar-mar!"</p>
           <p class="text-3xl lg:text-4xl xl:text-5xl mt-8">Školica sporta Soko</p>
         </div>
 
-        <button
-          class="btn-home border-solid border-whiteish border-2 rounded hover:bg-whiteish hover:text-darkish px-4 py-2 mt-8 text-2xl lg:text-3xl xl:text-4xl">Zakaži
-          rođendan</button>
+        <a href="#contact"><button
+            class="btn-home border-solid border-whiteish border-2 rounded hover:bg-whiteish hover:text-darkish px-4 py-2 mt-8 text-2xl lg:text-3xl xl:text-4xl">Zakaži
+            rođendan</button></a>
       </div>
 
     </div>
@@ -82,7 +84,7 @@
 
   <!-- Count section -->
 
-  <section id="count" class="background border-bottom">
+  <section id="count" class="background border-bottom revealing">
     <div class="container mx-auto overflow-hidden">
       <div class="counting z-10 relative my-8 flex flex-col justify-between item-center lg:flex-row lg:justify-between">
         <div class="flex flex-col text-center m-4">
@@ -104,7 +106,7 @@
 
   <!-- About -->
 
-  <section id="about" class="background border-bottom">
+  <section id="about" class="background border-bottom revealing">
     <div class="container mx-auto overflow-hidden">
       <div class="about my-8 relative z-10">
         <div class="about-content flex flex-col text-center">
@@ -147,7 +149,7 @@
 
   <!-- Services -->
 
-  <section id="services" class="background border-bottom">
+  <section id="services" class="background border-bottom revealing">
     <div class="container mx-auto overflow-hidden">
       <div class="services relative z-10 my-8 text-center">
         <h2 class="text-2xl lg:text-4xl mb-4 animation">Animatorske usluge za Vas</h2>
@@ -180,17 +182,19 @@
         </div>
 
         <h2 class="border-top py-4 text-lg md:text-2xl lg:text-3xl">Nemate ideju za proslavu rođendana?</h2>
-        <button
-          class="border-solid border-whiteish border-2 rounded py-2 px-6 mt-5 hover:bg-whiteish hover:text-darkish lg:text-xl"><i
-            class="fas fa-phone-alt"></i>
-          Angažujte
-          nas</button>
+        <a href="#contact"><button
+            class="border-solid border-whiteish border-2 rounded py-2 px-6 mt-5 hover:bg-whiteish hover:text-darkish lg:text-xl"><i
+              class="fas fa-phone-alt"></i>
+            Angažujte
+            nas</button></a>
       </div>
     </div>
     </div>
   </section>
 
-  <section id="gallery" class="background border-bottom">
+  <!-- Gallery -->
+
+  <section id="gallery" class="background border-bottom revealing">
     <div class="container mx-auto overflow-hidden">
       <div class="reviews relative z-10 my-8 text-center border-bottom">
         <h2 class="text-2xl lg:text-4xl animation">Šta roditelji misle o nama?</h2>
@@ -240,6 +244,51 @@
       </div>
     </div>
   </section>
+
+  <!-- Contact -->
+
+  <section id="contact" class="background border-bottom revealing">
+    <div class="container mx-auto overflow-hidden">
+      <div class="contact-content relative z-10 my-8 text-center">
+        <h2 class="text-2xl lg:text-4xl animation">Kako do nas?</h2>
+        <h3 class="text-xl lg:text-3xl my-4">Veoma lako!</h3>
+
+        <div class="contact-container mt-6 lg:mt-12 flex flex-col items-center lg:flex-row lg:items-center">
+          <div class="contact-info w-6/12">
+            <p class="text-lg lg:text-2xl">Rođendan možete zakazati pozivom na broj <span
+                class="animation">064-371-32-84
+              </span>,
+              putem
+              <span class="animation">društvenih
+                mreža</span> ili da popunite formu.
+            </p>
+            <div class="social mt-4 mb-8 text-4xl">
+              <a href="#" class="mr-4 hover:text-orangeish"><i class="fab fa-facebook"></i></a>
+              <a href="#" class="ml-4 hover:text-orangeish"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+
+          <div class="form-content mb-8 mx-auto">
+            <form action="">
+              <input type="text" placeholder="Vaše ime i prezime" class="my-8 mx-4">
+              <input type="email" name="" id="" placeholder="Vaša e-mail adresa" class="mb-8 mx-4">
+              <textarea name="" id="" cols="20" rows="5" class="mx-4" placeholder="Ostavite poruku"></textarea>
+              <button type="submit" class="mx-4 mt-8 p-2 border-2 rounded hover:bg-blueish">Zakaži
+                rođendan</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer" class="">
+    <div class="container mx-auto overflow-hidden">
+      <div class="footer text-center">
+        <p class="p-3">Copyright &copy; <span class="footer-year"></span> Školica sporta Soko </p>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>

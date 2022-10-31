@@ -1,4 +1,5 @@
-import './scss/style.scss'
+import './scss/style.scss';
+import inView from 'in-view';
 
 'use strict';
 
@@ -131,4 +132,23 @@ $(document).ready(function () {
             $overlay.toggleClass('hidden')
         })
     })
+
+    //! Footer
+
+    const footYear = $('.footer-year');
+    const $date = new Date().getFullYear();
+    footYear.text($date);
+
+    //! In-view
+    let offset = 75
+    if (window.innerWidth > 1280) {
+        offset = 100
+    }
+
+    inView.offset(offset);
+
+    inView('.revealing')
+        .on('enter', el => {
+            el.classList.add('in-view')
+        })
 })
